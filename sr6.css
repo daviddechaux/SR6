@@ -1,0 +1,172 @@
+background-image:url(http://i.imgur.com/TQ8WzzX.png);
+
+.sheet-container 
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sheet-big-space
+{
+    margin: 20px 0 20px 0;
+}
+
+.sheet-break 
+{
+    flex-basis: 100%;
+    height: 0;
+}
+ 
+.sheet-inline
+{
+    display: inline-flex;
+    flex-grow: 1; 
+    margin: 5px 0 5px 0;
+}
+
+.sheet-inline-big
+{
+    display: inline-flex;
+    flex-grow: 2; 
+    margin: 5px 0 5px 0;
+}
+
+.sheet-inline
+{
+    display: inline-flex;
+    flex-grow: 1; 
+    margin: 5px 0 5px 0;
+}
+
+.sheet-aline-label
+{
+    width: 100px;
+    margin-top: 5px;
+}
+
+.sheet-aline-label-big
+{
+    width: 200px;
+    margin-top: 5px;
+}
+
+
+.sheet-aline-label-rule
+{
+    width: 300px;
+    margin-top: 5px;
+    color: gray;
+    font-size: small;
+    font-weight:normal;
+}
+
+.sheet-small-aline-label
+{
+    width: 5px;
+    margin: 5px;
+}
+
+.sheet-text
+{
+    width:200px;
+}
+
+.sheet-text-small
+{
+    width:180px;
+    margin: 0 5px 0 0;
+}
+
+.sheet-money
+{
+    text-align: right;
+}
+
+.sheet-text-very-small
+{
+    width:120px;
+    margin: 0 5px 0 0;
+}
+
+.sheet-attribute-title
+{
+    width:100px;
+}
+
+.sheet-attribute
+{
+    width:30px;
+}
+
+.sheet-line
+{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+}
+
+.sheet-col-text
+{
+    width: 20%;
+}
+
+
+.sheet-tiny-col
+{
+    width: 10%;
+    margin: 0px; 
+}
+
+.sheet-small-col
+{
+    width: 20%;
+    margin: 0px;
+}
+
+.sheet-medium-small-col
+{
+    width: 22%;
+    margin: 0px; 
+}
+
+.sheet-medium-col
+{
+    width: 30%;
+    display: flex;
+}
+
+.sheet-col
+{
+    width: 50%;
+    display: flex;
+}
+
+.sheet-giant-col
+{
+    width: 100%;
+    display: flex;
+}
+
+.sheet-display-block
+{
+    display: block;
+}
+
+.sheet-display-flex
+{
+    display: flex !important;
+}
+
+
+.sheet-secondary-attribute
+{
+    margin:0px;
+}
+
+.sheet-label-small
+{
+    color: gray;
+    font-size: small;
+    font-weight:normal;
+    margin: 0px;
+}

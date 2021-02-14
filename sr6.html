@@ -1,0 +1,286 @@
+<h2>Personal Data</h2>
+
+<div class="container big-space">
+    <div class="inline">
+        <label class="aline-label">Metatype</label>
+        <input class="text" type="text" name="attr_metatype" placeholder="Not a dragon obviously">
+    </div>
+    
+    <div class="break"></div> 
+
+    <div class="inline">
+        <label class="aline-label">Karma</label>
+        <input class="text" type="text" name="attr_karma" placeholder="Probably a bad one">
+    </div>
+
+    <div class="break"></div> 
+
+    <div class="inline">
+        <label class="aline-label">Nuyen</label>
+        <input class="text-small money" type="text" name="attr_nuyen" placeholder="Not a lot">
+        <label class="small-aline-label">¥</label>
+    </div>
+
+    <div class="break"></div> 
+
+    <div class="inline">
+        <label class="aline-label">Essence</label>
+        <input class="text" type="text" name="attr_essence" placeholder="6">
+    </div>
+</div>
+
+
+<H2>Attributes</H2>
+
+<table class="big-space">
+    <thead>
+        <tr>
+            <th class="attribute-title"></th>
+            <th class="attribute-title">Body</th>
+            <th class="attribute-title">Agility</th>
+            <th class="attribute-title">Reaction</th>
+            <th class="attribute-title">Strength</th>
+            <th class="attribute-title">Willpower</th>
+            <th class="attribute-title">Logic</th>
+            <th class="attribute-title">Intuition</th>
+            <th class="attribute-title">Charisma</th>
+            <th class="attribute-title">Magic</th>
+            <th class="attribute-title">Edge</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Flesh</td>
+            <td><input class="attribute" type="number" name="attr_body_flesh" min="1" max="10"><button type="roll" name="roll_body_flesh" title="Roll Body" value="/r @{body_flesh}d6>5"></button></td>
+            <td><input class="attribute" type="number" name="attr_agility_flesh" min="1" max="10"><button type="roll" name="roll_agility_flesh" title="Roll Agility" value="/r @{agility_flesh}d6>5"></button></td>
+            <td><input class="attribute" type="number" name="attr_reaction_flesh" min="1" max="10"><button type="roll" name="roll_reaction_flesh" title="Roll Reaction" value="/r @{reaction_flesh}d6>5"></button></td>
+            <td><input class="attribute" type="number" name="attr_strength_flesh" min="1" max="10"><button type="roll" name="roll_strength_flesh" title="Roll Strength" value="/r @{strength_flesh}d6>5"></button></td>
+            <td><input class="attribute" type="number" name="attr_willpower_flesh" min="1" max="10"><button type="roll" name="roll_willpower_flesh" title="Roll Willpower" value="/r @{willpower_flesh}d6>5"></button></td>
+            <td><input class="attribute" type="number" name="attr_logic_flesh" min="1" max="10"><button type="roll" name="roll_logic_flesh" title="Roll Logic" value="/r @{logic_flesh}d6>5"></button></td>
+            <td><input class="attribute" type="number" name="attr_intuition_flesh" min="1" max="10"><button type="roll" name="roll_intuition_flesh" title="Roll Intuition" value="/r @{intuition_flesh}d6>5"></button></td>
+            <td><input class="attribute" type="number" name="attr_charisma_flesh" min="1" max="10"><button type="roll" name="roll_charisma_flesh" title="Roll Charisma" value="/r @{charisma_flesh}d6>5"></button></td>
+            <td><input class="attribute" type="number" name="attr_magic_flesh" min="1" max="10"><button type="roll" name="roll_magic_flesh" title="Roll Magic" value="/r @{magic_flesh}d6>5"></button></td>
+            <td><input class="attribute" type="number" name="attr_edge_flesh" min="1" max="10"><button type="roll" name="roll_edge_flesh" title="Roll Edge" value="/r @{edge_flesh}d6>5"></button></td>
+        </tr>
+        <tr>
+            <td>Chrome</td>
+            <td><input class="attribute" type="number" name="attr_body_chrome"><button type="roll" name="roll_body_chrome" title="Roll Body" value="/r @{body_chrome}d6>5"></button></td>
+            <td><input class="attribute" type="number" name="attr_agility_chrome"><button type="roll" name="roll_agility_chrome" title="Roll Agility" value="/r @{agility_chrome}d6>5"></button></td>
+            <td><input class="attribute" type="number" name="attr_reaction_chrome"><button type="roll" name="roll_reaction_chrome" title="Roll Reaction" value="/r @{reaction_chrome}d6>5"></button></td>
+            <td><input class="attribute" type="number" name="attr_strength_chrome"><button type="roll" name="roll_strength_chrome" title="Roll Strength" value="/r @{strength_chrome}d6>5"></button></td>
+            <td><input class="attribute" type="number" name="attr_willpower_chrome"><button type="roll" name="roll_willpower_chrome" title="Roll Willpower" value="/r @{willpower_chrome}d6>5"></button></td>
+            <td><input class="attribute" type="number" name="attr_logic_chrome"><button type="roll" name="roll_logic_chrome" title="Roll Logic" value="/r @{logic_chrome}d6>5"></button></td>
+            <td><input class="attribute" type="number" name="attr_intuition_chrome"><button type="roll" name="roll_intuition_chrome" title="Roll Intuition" value="/r @{intuition_chrome}d6>5"></button></td>
+            <td><input class="attribute" type="number" name="attr_charisma_chrome"><button type="roll" name="roll_charisma_chrome" title="Roll Charisma" value="/r @{charisma_chrome}d6>5"></button></td>
+            <td><input class="attribute" type="number" name="attr_magic_chrome"><button type="roll" name="roll_magic_chrome" title="Roll Magic" value="/r @{magic_chrome}d6>5"></button></td>
+            <td><input class="attribute" type="number" name="attr_edge_chrome"><button type="roll" name="roll_edge_chrome" title="Roll Edge" value="/r @{edge_chrome}d6>5"></button></td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td><input type="number" name="attr_body_total" value="@{body_flesh}+@{body_chrome}" disabled="true"><button type="roll" name="roll_body_total" title="Roll Body" value="/r (@{body_flesh}+@{body_chrome})d6>5"></button></td>
+            <td><input type="number" name="attr_agility_total" value="@{agility_flesh}+@{agility_chrome}" disabled="true"><button type="roll" name="roll_agility_total" title="Roll Agility" value="/r (@{agility_flesh}+@{agility_chrome})d6>5"></button></td>
+            <td><input type="number" name="attr_reaction_total" value="@{reaction_flesh}+@{reaction_chrome}" disabled="true"><button type="roll" name="roll_reaction_total" title="Roll Reaction" value="/r (@{reaction_flesh}+@{reaction_chrome})d6>5"></button></td>
+            <td><input type="number" name="attr_strength_total" value="@{strength_flesh}+@{strength_chrome}" disabled="true"><button type="roll" name="roll_strength_total" title="Roll Strength" value="/r (@{strength_flesh}+@{strength_chrome})d6>5"></button></td>
+            <td><input type="number" name="attr_willpower_total" value="@{willpower_flesh}+@{willpower_chrome}" disabled="true"><button type="roll" name="roll_willpower_total" title="Roll Willpower" value="/r (@{willpower_flesh}+@{willpower_chrome})d6>5"></button></td>
+            <td><input type="number" name="attr_logic_total" value="@{logic_flesh}+@{logic_chrome}" disabled="true"><button type="roll" name="roll_logic_total" title="Roll Logic" value="/r (@{logic_flesh}+@{logic_chrome})d6>5"></button></td>
+            <td><input type="number" name="attr_intuition_total" value="@{intuition_flesh}+@{intuition_chrome}" disabled="true"><button type="roll" name="roll_intuition_total" title="Roll Intuition" value="/r (@{intuition_flesh}+@{intuition_chrome})d6>5"></button></td>
+            <td><input type="number" name="attr_charisma_total" value="@{charisma_flesh}+@{charisma_chrome}" disabled="true"><button type="roll" name="roll_charisma_total" title="Roll Charisma" value="/r (@{charisma_flesh}+@{charisma_chrome})d6>5"></button></td>
+            <td><input type="number" name="attr_magic_total" value="@{magic_flesh}+@{magic_chrome}" disabled="true"><button type="roll" name="roll_magic_total" title="Roll Magic" value="/r (@{magic_flesh}+@{magic_chrome})d6>5"></button></td>
+            <td><input type="number" name="attr_edge_total" value="@{edge_flesh}+@{edge_chrome}" disabled="true"><button type="roll" name="roll_edge_total" title="Roll Edge" value="/r (@{edge_flesh}+@{edge_chrome})d6>5"></button></td>
+        </tr>
+    </tbody>
+</table>
+
+<H2>Secondary Attributes</H2>
+
+<!-- Initiative -->
+<div class="line">
+    <div class="col-text">
+        <label class="label-small">&nbsp;</label>
+        <label class="secondary-attribute">Initiative</label>
+        <label class="label-small">Reaction + Intuition</label>
+    </div>
+    
+    <div class="col display-flex">
+        <div class="small-col display-block">
+            <label class="label-small">Cold SIM</label>
+            <div class="giant-col">
+                <input type="number" name="attr_init_flesh" disabled="true" value="@{reaction_flesh}+@{intuition_flesh}">
+                <label class="small-aline-label">+1d6</label>
+            </div>
+        </div>
+
+        <div class="tiny-col">
+            <label class="label-small">&nbsp;</label>
+            <button type="roll" name="roll_init_flesh" title="Roll Initiative Cold SIM" value="/r @{init_flesh} + 1d6"></button>            
+        </div>
+
+        <div class="tiny-col display-block">
+            <label class="label-small">Hot SIM</label>
+            <input type="number" name="attr_init_chrome" disabled="true" value="@{reaction_total}+@{intuition_total}">
+        </div>
+
+        <div class="small-col display-block">
+            <label class="label-small">&nbsp;</label>
+            <div class="giant-col">
+                <input type="number" name="attr_init_bonus_chrome" min="1">
+                <label class="small-aline-label">d6</label>
+            </div>
+        </div>
+
+        <div class="tiny-col">
+            <label class="label-small">&nbsp;</label>
+            <button type="roll" name="roll_init_total" title="Roll Initiative Hot SIM" value="/r @{init_chrome} + @{init_bonus_chrome}d6"></button>            
+        </div>
+    </div>
+</div>
+
+<!-- Attack and Defense Ratings -->
+<div class="line">
+    <div class="col-text">
+        <label class="label-small">&nbsp;</label>
+        <label class="secondary-attribute">Attack Rating (AR)</label>
+        <label class="label-small">Reaction + Strength + Misc</label>
+    </div>
+    
+    <div class="medium-col">
+        <div class="small-col">
+            <label class="label-small">Flesh</label>
+            <input type="number" name="attr_attackrating" disabled="true" value="@{reaction_total}+@{strength_total}">
+        </div>
+        <div class="small-col">
+            <label class="label-small">&nbsp;</label>
+            <button type="roll" name="roll_attackrating" title="Roll Attack Rating" value="/r (@{attackrating})d6>5"></button>            
+        </div>
+        <div class="small-col">
+            <label class="label-small">Chrome</label>
+            <input type="number" name="attr_attackrating_misc" min="0">
+        </div>
+        <div class="small-col">
+            <label class="label-small">Total</label>
+            <input type="number" name="attr_attackrating_total" disabled="true" value="@{attackrating}+@{attackrating_misc}"">
+        </div>
+        <div class="small-col">
+            <label class="label-small">&nbsp;</label>
+            <button type="roll" name="roll_attackrating_total" title="Roll Attack Rating" value="/r (@{attackrating_total})d6>5"></button>            
+        </div>
+    </div>
+
+    <div class="col-text">
+        <label class="label-small">&nbsp;</label>
+        <label class="secondary-attribute">Defense Rating (DR)</label>
+        <label class="label-small">Body + Armor + Misc</label>
+    </div>
+    
+    <div class="medium-col">
+        <div class="small-col">
+            <label class="label-small">Flesh</label>
+            <input type="number" name="attr_defenserating" disabled="true" value="@{body_total}+@{armor_total}">
+        </div>
+        <div class="small-col">
+            <label class="label-small">&nbsp;</label>
+            <button type="roll" name="roll_defenserating" title="Roll Defense Rating" value="/r (@{defenserating_total})d6>5"></button>            
+        </div>
+        <div class="small-col">
+            <label class="label-small">Misc</label>
+            <input type="number" name="attr_defenserating_misc" min="0">
+        </div>
+        <div class="small-col">
+            <label class="label-small">Total</label>
+            <input type="number" name="attr_defenserating_total" disabled="true" value="@{defenserating}+@{defenserating_misc}"">
+        </div>
+        <div class="small-col">
+            <label class="label-small">&nbsp;</label>
+            <button type="roll" name="roll_defenserating_total" title="Roll Defense Rating" value="/r (@{defenserating_total})d6>5"></button>            
+        </div>
+    </div>
+</div>
+
+<!-- Attack and Defense Ratings -->
+<div class="line">
+    <div class="col-text">
+        <label class="label-small">&nbsp;</label>
+        <label class="secondary-attribute">Physical Condition</label>
+        <label class="label-small">(Body / 2) + 8 + Misc</label>
+    </div>
+    
+    <div class="medium-col">
+        <div class="small-col">
+            <label class="label-small">Base</label>
+            <input type="number" name="attr_physicalcondition_base" disabled="true" value="[[round((@{body_total} / 2) + 8)]]">
+        </div>
+        <div class="small-col">
+            <label class="label-small">Misc</label>
+            <input type="number" name="attr_physicalcondition_misc" min="0">
+        </div>
+        <div class="small-col">
+            <label class="label-small">Total</label>
+            <input type="number" name="attr_physicalcondition_total" disabled="true" value="@{physicalcondition_base} + @{physicalcondition_misc}">
+        </div>
+        <!-- <div class="small-col">
+            <label class="label-small">&nbsp;</label>
+            <button type="roll" name="roll_attackrating" title="Roll Attack Rating" value="/r (@{attackrating})d6>5"></button>            
+        </div>
+        <div class="small-col">
+            <label class="label-small">Chrome</label>
+            <input type="number" name="attr_attackrating_misc" >
+        </div>
+        <div class="small-col">
+            <label class="label-small">Total</label>
+            <input type="number" name="attr_attackrating_total" disabled="true" value="@{attackrating}+@{attackrating_misc}"">
+        </div>
+        <div class="small-col">
+            <label class="label-small">&nbsp;</label>
+            <button type="roll" name="roll_attackrating_total" title="Roll Attack Rating" value="/r (@{attackrating_total})d6>5"></button>            
+        </div> -->
+    </div>
+
+    <!-- <div class="col-text">
+        <label class="label-small">&nbsp;</label>
+        <label class="secondary-attribute">Defense Rating (DR)</label>
+        <label class="label-small">Body + Armor + Misc</label>
+    </div>
+    
+    <div class="medium-col">
+        <div class="small-col">
+            <label class="label-small">Flesh</label>
+            <input type="number" name="attr_defenserating" disabled="true" value="@{body_total}+@{armor_total}">
+        </div>
+        <div class="small-col">
+            <label class="label-small">&nbsp;</label>
+            <button type="roll" name="roll_defenserating" title="Roll Defense Rating" value="/r (@{defenserating_total})d6>5"></button>            
+        </div>
+        <div class="small-col">
+            <label class="label-small">Misc</label>
+            <input type="number" name="attr_defenserating_misc" >
+        </div>
+        <div class="small-col">
+            <label class="label-small">Total</label>
+            <input type="number" name="attr_defenserating_total" disabled="true" value="@{defenserating}+@{defenserating_misc}"">
+        </div>
+        <div class="small-col">
+            <label class="label-small">&nbsp;</label>
+            <button type="roll" name="roll_defenserating_total" title="Roll Defense Rating" value="/r (@{defenserating_total})d6>5"></button>            
+        </div>
+    </div> -->
+</div>
+
+			
+
+
+
+<H2>Gear</H2>
+
+<div class="line">
+    <div class="col-text">
+        <label class="label-small">&nbsp;</label>
+        <label class="secondary-attribute">Total Armor</label>
+    </div>
+
+    <div class="medium-col">
+        <div class="small-col">
+            <label class="label-small">Total Armor</label>
+            <input type="number" name="attr_armor_total" min="0">
+        </div>
+    </div>
+</div>
